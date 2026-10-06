@@ -1,0 +1,11 @@
+<h1>Produtos em Destaque</h1>
+
+{{#if erro}}
+  <div class="alerta-erro">{{erro}}</div>
+{{/if}}
+
+<div class="produtos-grid">
+  {{#each produtos}}
+    {{> produto this}}
+  {{/each}}
+</div>
